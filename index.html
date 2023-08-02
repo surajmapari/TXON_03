@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>To-Do List App</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>To-Do List By SURAJ MAPARI</h1>
+        <div class="input-container">
+            <input type="text" id="taskInput" placeholder="Enter your task..." autofocus>
+            <button id="addButton" onclick="addTask()">Add</button>
+        </div>
+        <div class="compartments">
+            <div class="compartment" id="compartmentCompleted">
+                <h3>Completed</h3>
+                <div class="task-list" id="taskListCompleted" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </div>
+            <div class="compartment" id="compartmentUncompleted">
+                <h3>Uncompleted</h3>
+                <div class="task-list" id="taskListUncompleted" ondrop="drop(event)" ondragover="allowDrop(event)">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
